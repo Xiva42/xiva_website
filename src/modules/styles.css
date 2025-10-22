@@ -1,5 +1,7 @@
 body {
     background-color: rgb(25, 25, 25);
+    background-image: url("../../assets/background/lava_background_original.jpg");
+    background-size: cover;
     color: rgb(222, 222, 222);
 }
 
@@ -12,4 +14,20 @@ p {
     border: 2px solid darkcyan;
     padding: 5%;
     margin: 2%;
+    background-color: #252525e0;
+}
+
+table {
+    background-color: #252525e0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 2px dashed darkcyan;
+    border-top: 2px dashed darkcyan;
+}
+
+tr:hover {
+    background-color: #252525ff;
 }
