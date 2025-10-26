@@ -1,6 +1,6 @@
 body {
     background-color: rgb(25, 25, 25);
-    background-image: url("../../assets/background/lava_background_original.jpg");
+    background-image: url("/assets/img/lava_background_original.jpg");
     background-size: cover;
     color: rgb(222, 222, 222);
 }
@@ -30,4 +30,25 @@ th, td {
 
 tr:hover {
     background-color: #252525ff;
+}
+
+dl {
+    background-color: #252525e0;
+    border: 2px solid darkcyan;
+}
+
+.grid-contain {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.grid-tile {
+    border: 4px solid purple;
+    background-color: #252525d0;
+    margin: 5%;
+}
+
+#BIGtext {
+    font-size: 150%;
+    color: darkred;
 }

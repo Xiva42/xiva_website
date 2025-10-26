@@ -2,8 +2,13 @@
 <html lang="en">
     <head>
         <title>XivaHIVE</title>
-        <link rel="stylesheet" href="modules/styles.css">
-        <link rel="icon" type="image/x-icon" href="../assets/img/Smuck_Emoji.png">
+        <link rel="stylesheet" href="/src/modules/styles.css">
+        <link rel="icon" type="image/x-icon" href="/assets/img/Smuck_Emoji.png">
+        <script>
+            function changeGrid() {
+                document.getElementById("right-box-p").innerHTML = "this is something else"
+            }
+        </script>
     </head>
     <body>
         <h1 id="pageTop">yes!</h1>
@@ -12,7 +17,7 @@
         <br><br>
         <p>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <img src="../assets/img/Smuck_Emoji.png" alt="the img is broken :(" style="width:40%;">
+                <img src="/assets/img/Smuck_Emoji.png" alt="the img is broken :(" style="width:40%;">
             </a>
             This is da text yes
         </p>
@@ -65,5 +70,38 @@
                 <td>BaseBuilder</td>
             </tr>
         </table>
+        <dl>
+            <dt>A list of gooood eatables :D~</dt>
+            <dd>
+                <ol>
+                    <li>Chokolate</li>
+                    <li>Citrusmoon</li>
+                    <li>treetrunks</li>
+                </ol>
+            </dd>
+            <dt>This is another list</dt>
+            <dd>
+                <ul>
+                    <li>yes</li>
+                    <li>no</li>
+                    <li>maybe</li>
+                </ul>
+            </dd>
+        </dl>
+        <div class="grid-contain">
+            <div class="grid-tile">
+                <h1> This is a box</h1>
+                <p> wao this is a paragraf.... it contains a lot of words... My name is <span style="color: red;">Maximus Decimus Meridius</span>, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true Emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. <span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: darkcyan;"><ins>And I will have my vengeance, in this life or the next</ins></span></p>
+            </div>
+            <div class="grid-tile">
+                <h1> This is not a box ;)</h1>
+                <p> very small text</p>
+            </div>
+            <div class="grid-tile">
+                <h1> This is NOT not a box ;)</h1>
+                <p id="right-box-p">very VERY small text</p>
+            </div>
+        </div>
+    <button onclick="changeGrid()">change the text of the rightmost gridbox :)</button>
     </body>
 </html>
