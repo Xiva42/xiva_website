@@ -1,0 +1,13 @@
+{
+    "editor.wordBasedSuggestions": "off",
+    
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+    
+    
+    "livePreview.serverRoot": "root",
+    "path-intellisense.mappings": {
+        "/": "${workspaceFolder}/root"
+    },
+
+}
