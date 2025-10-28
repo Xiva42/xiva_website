@@ -6,7 +6,7 @@
     <meta name="description" content="Xiva's base of operations for sharing and displaying work and ideas :)">
     <meta name="author" content="Marcus Dalentoft">
     <meta name="keywords" content="Xiva, XivaHIVE, Entroqy, EntroqyMusic, Marcus Dalentoft, Dalentoft">
-    <title>XivaHIVE</title>
+    <title>XivaHIVE | Home Page</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/Smuck_Emoji.png">
     <script>
@@ -22,10 +22,12 @@
     <a href="https://github.com/Xiva42" target="_blank">My github :)</a>
     <br><br>
     <p>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <img src="/assets/images/Smuck_Emoji.png" alt="the img is broken :(" style="width:40%;">
-        </a>
-        This is da text yes
+        <picture>
+            <source srcset="/assets/images/Smuck_Emoji.png" media="(max-width: 1000px)">
+            <source srcset="/assets/images/SMIRK.png">
+            <img src="/assets/images/Smuck_Emoji.png" alt="the img is broken :(" style="width: 40%;">
+        </picture>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">This is da text yes</a>
     </p>
     <br>
     <p style="text-align: center;">
@@ -108,5 +110,17 @@
             <p id="right-box-p">very VERY small text</p>
         </div>
     </div>
-    <button onclick="changeGrid()">change the text of the rightmost gridbox :)</button>    
+    <button onclick="changeGrid()">change the text of the rightmost gridbox :)</button>
+    <div class="flex-container">
+        <div class="flex-section-spacing">
+            <div class="flex-section">
+                <p>Yes text</p>
+            </div>
+        </div>
+        <div class="flex-section-spacing">
+            <div class="flex-section">
+                <p>yes some  sssssssssssss other text</p>
+            </div>
+        </div>
+    </div>
 </body>
