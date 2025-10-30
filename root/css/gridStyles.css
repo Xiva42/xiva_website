@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-auto-rows: 300px;
+    gap: 1em;
+}
+
+.grid-container .tile {
+    padding: 1em;
+    background-color: rgb(73, 0, 133);
+    text-align: center;
+    border-radius: 1em;
+    font-size: 2em;
+}
