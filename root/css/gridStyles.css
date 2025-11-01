@@ -1,14 +1,81 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-auto-rows: 300px;
+    grid-auto-columns: 15em;
+    grid-auto-rows: 15em;
+    grid-template-areas: 
+    "tile-1 tile-1 tile-2"
+    "tile-1 tile-1 tile-3"
+    "tile-4 tile-5 tile-5";
+
     gap: 1em;
 }
 
 .grid-container .tile {
+    font-size: 1em;
     padding: 1em;
     background-color: rgb(73, 0, 133);
+    color: whitesmoke;
     text-align: center;
     border-radius: 1em;
-    font-size: 2em;
+    
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.grid-container button {
+    font-size: inherit;
+    padding: 1em;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.grid-container .stack {
+    display: grid;
+    grid-template-rows: 100%;
+    border-radius: 1em;
+    
+    overflow: hidden;
+}
+
+.stack img {
+    margin-top: -180px;
+    display: block;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+}
+
+.stack .text-con {
+    display: grid;
+    place-items: end;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.stack .text-con p {
+    margin: 0;
+    font-size: inherit;
+    padding: 1em;
+    background-color: darkcyan;
+    opacity: 0.7;
+}
+
+@media(max-width: 54em){
+    .grid-container {
+        grid-template-areas:
+        "tile-1 tile-1"
+        "tile-1 tile-1"
+        "tile-2 tile-3"
+        "tile-5 tile-5"
+        "tile-4 none";
+    }
 }
