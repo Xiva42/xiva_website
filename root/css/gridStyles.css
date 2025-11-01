@@ -1,9 +1,11 @@
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-
+    background-color: #101010;
 }
+
+
+/*******************************************************************/
+/*********************** Bento Grid ********************************/
+/*******************************************************************/
 
 .grid-container {
     display: grid;
@@ -15,6 +17,7 @@ body {
     "tile-4 tile-5 tile-5";
 
     gap: 1em;
+    justify-content: center;
 }
 
 .grid-container .tile {
@@ -27,7 +30,7 @@ body {
     
     display: grid;
     grid-template-rows: 1fr auto;
-}
+} 
 
 .grid-container button {
     font-size: inherit;
@@ -43,30 +46,26 @@ body {
     border-radius: 1em;
     
     overflow: hidden;
+    grid-template-areas: "stack";
 }
 
 .stack img {
+    grid-area: stack;
     margin-top: -180px;
-    display: block;
-    width: 100%;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    
+    width: 100%;   
 }
 
 .stack .text-con {
+    grid-area: stack;
     display: grid;
     place-items: end;
-    grid-column: 1/2;
-    grid-row: 1/2;
 }
 
 .stack .text-con p {
     margin: 0;
     font-size: inherit;
     padding: 1em;
-    background-color: darkcyan;
-    opacity: 0.7;
+    background-color: rgba(0, 139, 139, 0.5);
 }
 
 @media(max-width: 54em){
@@ -78,4 +77,48 @@ body {
         "tile-5 tile-5"
         "tile-4 none";
     }
+}
+
+
+/*******************************************************************/
+/*********************** Buy Menu Grid *****************************/
+/*******************************************************************/
+
+.grid-container-buy-menu {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    justify-content: center;
+    gap: 1em;
+}
+
+.grid-container-buy-menu .tile {
+    background-color: #008080;
+    border-radius: 1em;
+    padding: 1em;
+    
+    display: grid;
+    grid-template-areas: "stack";
+}
+
+.grid-container-buy-menu .tile-background {
+    grid-area: stack;
+    padding-top: 100%;
+}
+
+.grid-container-buy-menu .tile-content {
+    grid-area: stack;
+    
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+
+.grid-container-buy-menu .text {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.grid-container-buy-menu button {
+    border-radius: 1em;
 }
